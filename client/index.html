@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Bug Tracker</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .bug { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+        .open { background: #ffe6e6; }
+        .resolved { background: #e6ffe6; }
+        button { margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Bug Tracker</h1>
+    
+    <form id="bugForm">
+        <input type="text" id="title" placeholder="Bug title" required>
+        <textarea id="description" placeholder="Bug description" required></textarea>
+        <button type="submit">Report Bug</button>
+    </form>
+
+    <div id="bugs"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
